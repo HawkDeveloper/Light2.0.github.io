@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .modal-window {
+        display: none;
+        align-self: center;
+        position: fixed;
+        z-index: 10;
+        width: 600px;
+        height: 200px;
+        }
+        .modal-window_active {
+        display: flex;
+        }
+        .btn-close {
+        text-transform: uppercase;
+        cursor: pointer;
+        }
+
+        .wrapper {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        }
+        .wrapper-active {
+        display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper "></div>
+    <li><button data-btn='1' class="btn btn--active">Sign In</button>
+    
+        <div class="modal-window  js-modal" data-btn='1'>
+            <div class="sign-in">
+                <span class="close">&times;</span>
+                <form class="sign-in__form">
+                  <h2 class="form-title">Sign in</h2>
+                  <input class="form-email" id="i1" placeholder="Email or username" type="text" />
+                  <input class="form-password" placeholder="Password" type="password" />
+                  <button id="submit" class="form-btn" type="button">Sign in</button>
+                </form>
+              </div>
+          </div>
+    
+    <button data-btn='2' class="btn btn--active">Get it now</button>
+
+    <div class="modal-window  js-modal" data-btn='2'>
+        <div class="addCard__modal" id="addCard">
+            <div class="adding-card">
+              <div class="container">
+                <span class="close2">&times;</span>
+                  <h2 class="adding-card__title">Realities cards</h2>
+                  <form class="adding-card__form">
+                      <h2 class="adding-card__form-name">Add new card</h2>
+                      <input class="adding-card__form-input" placeholder="Card name" type="text" />
+                      <input class="adding-card__form-input" placeholder="Card description" type="text" />
+                      <input class="adding-card__form-input" placeholder="Card image name" type="text" />
+                      <button type="button" id="add" class="adding-card__form-btn">Add</button>
+                  </form>
+              </div>
+          </div>
+        </div>
+        
+    </div>
+    
+    <script src="app2.js"></script>
+</body>
+</html>

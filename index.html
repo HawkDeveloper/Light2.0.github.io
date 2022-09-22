@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>Light</title>
+</head>
+<body>
+  
+<!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">Light</a>
+                
+                  <div class="header__menu menu">
+                      <div class="menu__icon">
+                        <span></span>
+                      </div>
+                      
+                      <nav class="nav">
+                        <ul class="nav__list">
+                        <li><a class="nav__link active" href="#">Home</a></li> 
+                        <li><a class="nav__link" href="#">Company</a></li> 
+                        <li><a class="nav__link" href="#">Features</a></li> 
+                        <li><button data-btn='1' id="btnSign" class="btn btn--active">Sign In</button>
+                          
+                        </li> 
+                        
+                        </ul> 
+                       
+                      </nav>
+                      <div class="dropdown__av">
+                        <img  class="dropbtn" id="dropbtn" src="img/Ellipse 1intro1.png" alt="">
+                        <ul id="myDropdown" class="dropdown-content__av">
+                          <li><a href="#home">Profile</a></li>
+                         <li><a href="#about">Cards</a></li>
+                         <li><a href="#contact" id="logOut">Log Out</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                   <div class="vwrapper "></div>
+                    <div class="vmodal-window  js-modal" data-btn='1'>
+                      <div class="sign-in">
+                        <span class="close">&times;</span>
+                        <form id="signInForm" class="sign-in__form">
+                          <h2 class="form-title">Sign in</h2>
+                          <input class="form-email" id="i1" placeholder="Email or username" type="text" />
+                          <input class="form-password" id="i2" placeholder="Password" type="password" />
+                          <button id="submit" class="form-btn" type="button">Sign in</button>
+                        </form>
+                      </div>
+                    </div> 
+                  
+                  
+            </div>
+        </div>
+      <img class="ellipse__header" src="img/Ellipse 8header.svg" alt="">
+    </header>
+<!-- /Header -->
+
+<!-- Intro -->
+    <section class="intro"> 
+        <div class="container">
+            <div class="intro__inner">
+
+                <div class="intro__content">
+                    <h1 class="intro__title">Let’s Explore <br>
+                        Three-Dimensional
+                        visual</h1>
+                    <div class="intro__text"><p>With virtual technology you can see the digital world  feel more real and you can play the game with a new  style.</p></div>
+
+                    <button data-btn='2' id="addingBTN"  class="btn btn--active" data-tooltip="Creat your card">Get it now</button>
+                    <button id="exp" class="btn">Explore Device</button>
+
+                    <div class="intro__people">
+                      <ul class="intro__people-list">
+                          <li class="intro__people-list--orange">
+                              <img src="img/Ellipse 1intro1.png" alt="photo woman in orange" />
+                          </li>
+                          <li class="intro__people-list--black">
+                              <img src="img/Ellipse 2intro2.png" alt="photo woman in black" />
+                          </li>
+                          <li class="intro__people-list--yellow">
+                              <img src="img/Ellipse 3intro3.png" alt="photo woman in yellow" />
+                          </li>
+                          <li class="intro__people-list--white">
+                              <img src="img/Ellipse 4intro4.png" alt="photo man in white" />
+                          </li>
+                      </ul>
+                      <div class="people-online">
+                          <img src="img/dot.svg" class="people-online__icon" alt="dot" />
+                          <p>400k people online</p>
+                      </div>
+                  </div>
+                </div>  
+
+                <div class="intro__photo">
+                    <img class="intro__photo__groupStars" src="img/stars.png" alt="">
+                    <img class="intro__photo__group" src="img/Group 62.png" alt="">
+
+                    <div class="photo__title">Cinematic Virtual Reality</div>
+                    <div class="photo__text">Let’s be the best for more real and effective results and ready
+                        to explore the limitless world that we have prepared for you.</div>
+                </div> 
+            </div> 
+            
+              <div class="vmodal-window  js-modal" id="vmodal-window" data-btn='2'>
+                    <div class="adding-card">
+                      <div class="container">
+                        <span class="close">&times;</span>
+                          <h2 class="adding-card__title">Realities cards</h2>
+                          <form class="adding-card__form">
+                              <h2 class="adding-card__form-name">Add new card</h2>
+                              <input class="adding-card__form-input" id="cardName" placeholder="Card name" type="text" />
+                              <input class="adding-card__form-input" id="cardDescription" placeholder="Card description" type="text" />
+                              <input class="adding-card__form-input" id="cardImageName" placeholder="Card image name" type="text" />
+                              <button type="button" id="add" class="adding-card__form-btn">Add</button>
+                          </form>
+                      </div>
+                  </div>    
+              </div>
+            
+        </div>
+        <img class="ellipse__intro" src="img/Ellipse 6intro.svg" alt="">
+
+    </section>
+<!-- /Intro -->
+
+<!-- advertising -->
+<section class="advertising">
+    <div class="container">
+        <div class="advertising__inner">
+
+            <div class="advertising__photo">
+                <img class="advertising__photo1" src="img/Section1.png" alt="">
+                <img class="advertising__photo2" src="img/Section2.png" alt="">
+            </div>
+
+            <div class="advertising__content">
+                <h2 class="advertising__title">New Experience In 
+                    Playing Game</h2>
+                <div class="advertising__text"><p>You can try playing the game with a 
+                    new style and of course a more real
+                    feel, like you are the main character 
+                    in your game and adventure in this 
+                    new digital world.</p></div>
+                <button id="getIt" data-btn='2' class="btn btn--active">Get it now</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /advertising -->
+
+<!-- awesome -->
+<section class="awesome">
+    <div class="container">
+        <div class="awesome__inner">
+          <img class="awesome__bg" src="img/Vector 5.png">
+            <h2 class="awesome__title">Awesome experiences with <br>
+                virtual reality world</h2>
+            <img class="awesome__phote" src="img/Group 35.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- /awesome -->
+
+<!-- headsets -->
+<section class="headsets">
+    <div class="container">
+        <div class="headsets__inner">
+            <h3 class="headsets__title">Mixed Reality Headsets</h3>
+
+            <!-- <div class="dropdown">
+              <button id="btn" class="dropbtn__filter" >First start</button>
+              <div class="dropdown-content" id="sortSelect" name="sort">
+                  <a value="New first">New first</a>
+                  <a value="Last first">Last first</a>
+              </div>
+            </div> -->
+            <div class="dropdown">
+              <select class="dropbtn__filter" id="sortSelect" name="sort">
+              
+                  <option  value="New first">New first</option>
+                  <option  value="Last first">Last first</option>
+               
+              </select>
+            </div>
+            
+        </div> <!--/headsets__inner-->
+        
+        <!-- Модалка вікна картки -->
+        <div class="vmodal-window  js-modal" data-btn='3'>
+            <!-- <div class="item__page">
+            <span class="close">&times;</span>
+              <div class="container">
+                  <img class="item__page__photo" src="img/Rectangle 33item_page.png" alt="">
+                  <div class="item__page__title">Metaverse</div>
+                  <div class="item__page__text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum qui omnis dolorum vitae facilis nisi quibusdam voluptate optio iusto dolorem, reprehenderit id, quisquam eveniet suscipit exercitationem. Pariatur, sunt quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi est alias quas provident doloremque esse sed fuga veniam at fugit amet, vitae sit rem consectetur autem saepe deserunt ipsum modi.</p></div>
+              </div>
+          </div> -->
+        </div>
+        <!-- Модалка вікна картки -->
+        
+        <ul class="headsets__item" id="listitemContent"> </ul>
+        <div id="table1">
+            <h3 class="headsets__title">Your Reality Headsets</h3>
+        <ul class="cards__gen"></ul>
+        </div>
+        <ul class="pagination">
+            <li class="pagination__num">&#8249;</li>
+            <li class="pagination__num active">1</li>
+            <li class="pagination__num">2</li>
+            <li class="pagination__num">…</li>
+            <li class="pagination__num">9</li>
+            <li class="pagination__num">10</li>
+            <li class="pagination__num">&#8250;</li> 
+        </ul>
+    
+    </div> <!--/continer-->
+
+    <img class="ellipse__head" src="img/Ellipse 18headnests.png" alt="">
+</section>
+<!-- /headsets -->
+
+<!-- coments -->
+<section class="clients">
+    <div class="container coments">
+      <h2 class="clients__title">What our clients say</h2>
+      <p class="clients__text">
+        See what our customer say about us. It really matter for us. How good or
+        bad we will make ir for evaluation to make EhyalLive better.
+      </p>
+      
+      <ul class="clients__item-fb" id="clientsUser"> </ul>
+
+    </div>
+    <img class="ellipse__addc" src="img/Ellipse 8adventCen.png" alt="">
+
+  </section>
+<!-- /coments -->
+
+<!-- values -->
+<section class="values">
+    <div class="container">
+        <div class="values__inner">
+
+            <div class="values__content">
+                <h2 class="values__title">Our company values
+                    culture <img class="decoration" src="img/Group 12.png" alt=""></h2>
+                <div class="values__subtitle"><p>We specialize in creating visual identities for products and branda in your company.</p></div>
+            </div>
+
+
+            <div class="company__advantage">
+                <ul class="company__advantage-item">
+                  <li class="advantage-item__name">
+                    <img class="advantage-item__name-img" src="img/emojione_victory-hand.svg" alt="Be Sincere" />
+                    <p class="advantage-item__name-title">Be Sincere</p>
+                  </li>
+                  <li class="advantage-item__name">
+                    <img class="advantage-item__name-img" src="img/Group 40keep.svg" alt="Keep it simplee" />
+                    <p class="advantage-item__name-title">Keep it simple</p>
+                  </li>
+                  <li class="advantage-item__name">
+                    <img class="advantage-item__name-img" src="img/Vectorstrong.svg" alt="Stronger together" />
+                    <p class="advantage-item__name-title">Stronger together</p>
+                  </li>
+                  <li class="advantage-item__name">
+                    <img class="advantage-item__name-img" src="img/twemoji_light-bulbtake.svg" alt="Take intelligent risks" />
+                    <p class="advantage-item__name-title">Take intelligent risks</p>
+                  </li>
+                </ul>
+              </div> 
+        </div>
+
+    </div>
+
+    <img class="ellipse__ad" src="img/Ellipse 19advent.png" alt="">
+</section>
+<!-- /values -->
+
+<!-- explore -->
+<footer class="explore">
+
+    <div class="container explore">
+        <div class="explore__inner">
+            <div class="explore__content">
+                <h2 class="explore__title">Explore product in <br>
+                    new way <img src="img/arrow.png" alt=""></h2>
+                <div class="explore__text">
+                    <p>We specialize in creating visual identities for <br> products and branda in your company.</p>
+                </div>
+
+                <form class="explore__form"action="">
+                    <div class="form__input"><input class="input" type="text" placeholder="Your Email"></div>
+                    <button type="button" id="email" class="btn btn--active">Start <span><img src="img/Vectorarrow.png" alt=""></span></button>
+                </form>
+            </div>
+
+            <img class="explore__photo" src="img/Rectangle 57.png" alt="">
+        </div>
+    </div>
+</footer>
+<!-- /explore -->
+
+
+<script src="mock.js"></script> 
+<script src="base.js"></script>
+<script src="plugins/modal.js"></script>
+<script src="index.js"></script>
+<script type="module" src="app.js"></script> 
+<!-- <script src="pagination.js"></script> -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
